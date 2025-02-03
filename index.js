@@ -24,8 +24,8 @@ async function startServer() {
         console.log("MongoDB connection successful");
 
         // Start Express server after successful DB connection
-        app.listen(5140, () => {
-            console.log("Server is running on port 5140");
+        app.listen(5145, () => {
+            console.log("Server is running on port 5145");
         });
     } catch (error) {
         console.error("MongoDB connection failed:", error);
