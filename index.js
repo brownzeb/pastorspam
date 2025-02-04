@@ -24,8 +24,8 @@ async function startServer() {
         console.log("MongoDB connection successful");
 
         // Start Express server after successful DB connection
-        app.listen(5145, () => {
-            console.log("Server is running on port 5145");
+        app.listen(5149, () => {
+            console.log("Server is running on port 5149");
         });
     } catch (error) {
         console.error("MongoDB connection failed:", error);
@@ -46,6 +46,7 @@ app.get('/api/cocoadata/GetLogs', async (request, response) => {
         console.error("Error fetching data from MongoDB:", error);
         response.status(500).send({ error: "Failed to fetch data from the database" });
     }
+    
 });
 
 // Route to add logs
